@@ -12,7 +12,12 @@ module.exports = function(app){
 	});
 
 	app.get('/admin', function (req, res) {
-		
+
 		res.render('admin');
+	})
+
+	app.get('client', function (req, res) {
+		
+		res.render('client');
 	})
 }
