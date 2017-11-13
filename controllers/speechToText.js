@@ -43,8 +43,10 @@ function setServicos(phraseWatson, res) {
 	});
 }
 
-function savePhrases(phrase, finalPhrase) {
-	
+function savePhrases(phrase) {
+	console.log("Watson " + phrase);
+	console.log("********************");
+	console.log("Identificado " + finalPhrase);
 }
 
 async function asyncCreateJSON(phrase) {
@@ -152,7 +154,7 @@ function setQuandoServico(phrase) {
 				["não tenho certeza", "não sei"]
 			];
 
-	replyWords = ["O quanto anstes possível","Nos próximos 30 dias","Nos próximos 3 meses","Não tenho certeza"];
+	replyWords = ["O quanto antes possível","Nos próximos 30 dias","Nos próximos 3 meses","Não tenho certeza"];
 
 	for (var i = 0; i < words.length; i++) {
 		if(phrase.includes(words[i])){

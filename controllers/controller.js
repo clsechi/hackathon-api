@@ -16,7 +16,7 @@ module.exports = function(app){
 		res.render('admin');
 	})
 
-	app.get('client', function (req, res) {
+	app.get('/client', function (req, res) {
 		
 		res.render('client');
 	})
